@@ -29,9 +29,9 @@ for ano in reversed(range(23)):
 
         elif ano == 0:
             for extra_ano in reversed(range(97, 100)):
-                if mes >= 10:
+                if 0 < mes >= 10:
                     driver.get(f'https://www.bcb.gov.br/Fis/Consorcios/Port/BD/19{ano}{mes}Consorcios_UF.zip')
                     sleep(2)
-                elif mes < 10:
+                elif 0 < mes < 10:
                     driver.get(f'https://www.bcb.gov.br/Fis/Consorcios/Port/BD/19{ano}0{mes}Consorcios_UF.zip')
                     sleep(2)
